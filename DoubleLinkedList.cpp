@@ -26,4 +26,12 @@ void addNode()
     cout << "\nEnter the name of the student: ";
     cin >> newNode->name; // assign value to theh data field of the new node
 
+    // insert the new Node in the list
+    // kondisi jika star == null atau noMhs node baru <= noMhs start
+    if (START == NULL || newNode->noMhs <= START->noMhs)
+    {
+      
+
+    }
+
 }    
