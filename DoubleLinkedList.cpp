@@ -9,15 +9,21 @@ struct Node
     string name;
       // deklarasi pointer next dan pref untuk penunjukkan data sebelum dan sesudah
     Node *next;
-    Node *pref;
+    Node *prev;
 
 };
 
 // deklarasi pointer START dan pemberian nilai
 Node*START=NULL;
 
-//deklarasi prosedur addNode
+// deklarasi prosedur addNode
 void addNode()
 {
-    
-}
+    // pembuatan node dan pemberian value untuk data noMhs dan name
+    Node *newNode = new Node(); // step 1 Buat node baru
+    cout << "\nEnter the roll number of the student: ";
+    cin >> newNode->noMhs; // assign value to theh data field of the new node
+    cout << "\nEnter the name of the student: ";
+    cin >> newNode->name; // assign value to theh data field of the new node
+
+}    
