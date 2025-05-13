@@ -50,7 +50,18 @@ void addNode()
         newNode->prev = NULL; // step 5: make the new node point to NULL
         START = newNode; // step 6: make the new node the first node
     }
-    
+    //kondisi jika semua kondisi if tidak terpenuhi
+    else
+    {
+        
+
+        // insert the new node in the midlle or at the end
+        // set nilai current = start dan nilai previos = null
+        Node *current = START; // STEP 1.a: start from the first mode
+        Node *previous = NULL; // STEP 1.b: previous node is NULL Inittialy
+
+      
+    }       
 }    
 
 
