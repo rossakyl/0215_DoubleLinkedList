@@ -37,8 +37,20 @@ void addNode()
             cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
             return;
         }
-        
+        //if the list is empety, make the new node the Start
+        //jika list kosong, maka node text nya adalah start 
+        newNode->next = START; // Step3; make the new code to the first
+        // kondisi jika start tidak memiliki nilai atau tidak kosong
+        if (START != NULL)
+        {
+            START->prev = newNode; // step 4 : make the first mode point to the new node
+        }
 
+        //memberi nilai prev = null dan start = node baru
+        newNode->prev = NULL; // step 5: make the new node point to NULL
+        START = newNode; // step 6: make the new node the first node
     }
-
+    
 }    
+
+
