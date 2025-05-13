@@ -12,3 +12,6 @@ struct Node
     Node *pref;
 
 };
+
+// deklarasi pointer START dan pemberian nilai
+Node*START=NULL;
